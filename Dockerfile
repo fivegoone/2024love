@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y wget unzip qrencode iproute2 systemctl 
     wget -O cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && \
     dpkg -i cloudflared.deb && \
     rm -f cloudflared.deb && \
-    wget -O temp.zip https://github.com/hero20190213/bearheroka/releases/download/1.0/misaka.zip && \
+    wget -O temp.zip https://github.com/fivegoone/beek/releases/download/1.0/misaka.zip && \
     unzip temp.zip xray && \
     rm -f temp.zip && \
     chmod -v 755 xray entrypoint.sh
